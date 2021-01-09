@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate and prepare the Buffer needed for your Bioassay">
+  <meta name="search" content="Buffer, Bioassay, Calculate buffer solution, Prepare buffer solution">
+
+  <title>Buffer Calculator</title>
+
+  <!--------------------------- Custom Link ----------------------->
+  <link rel="stylesheet" href="Asset/CSS/style.css">
+
+</head>
+<body>
+
+  <div class="red-round"></div>
+  
+  <div class="container">
+
+    <header>
+      <h1 class="h1">Buffer Calculator</h1>
+    </header>
+
+    <div class="wrapper">
+      <div class="yellow-rect-top"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <form action="" id="form">
+
+          <!------------------------ Molar Concentration input field ------------------>
+          <div class="input-group">
+            <span class="input-icon">Molarity (mM)</span>
+              <input type="text" name="molar-conc" placeholder="Enter molar concentration" id="molar-conc">
+          </div>
+
+          <!--------------------- Molar Mass Input field ------------------------->
+          <div class="input-group">
+            <span class="input-icon">Molar mass (&#103;mol&#8315;&sup1;)</span>
+              <input type="text" name="mass-molar" placeholder="Enter molar mass" id="molar-mass">
+          </div>
+
+          <!---------------------- Expected Volume input Field ---------------->
+          <div class="input-group">
+            <span class="input-icon">Volume (ml)</span>            
+              <input type="text" name="volume" placeholder="Enter volume" id="volume">
+          </div>
+
+          <input type="submit" class="btn btn-dark btn-lg" value="Calculate">
+        </form>
+      </div>
+
+      <div class="card-loader">
+        <img src="Asset/img/loading.gif" class="loader" alt="Loader">
+      </div>
+
+      <div class="card-footer">
+
+        <header>
+          <h2 class="h2">Result</h2>
+        </header>
+
+        <!----------------------- Calculated mass of solute -------------------->
+        <div class="input-group">
+          <span class="input-icon">Dissolution amount (&#103;)</span>
+            <input type="text" name="mass" id="mass" disabled>
+        </div>
+
+        <!-------------------------- Preparation Steps -------------------------->
+        <section class="section-steps">
+          <header>
+            <h3 class="h3">Steps To Follow</h3>
+          </header>
+
+          <ol class="paragraph">
+            <li>Prepare <span class="volume"></span> of distilled water in a beaker.</li>
+            <li>Add <span class="mass"></span> to the solution.</li>
+            <li>Adjust solution to the desired pH using either HCl or NaOH.</li>
+          </ol>
+        </section>
+      </div>
+    </div>
+
+    <section>
+      <div class="yellow-rect-bottom"></div>
+    </section>
+  </div>
+
+  <script src="Asset/JS/app.js"></script>
+
+</body>
+</html>
