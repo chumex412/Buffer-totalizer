@@ -94,11 +94,12 @@ header {
   position: absolute;
   background-color: #e7ce2c;
   transform: translateY(-10%);
-  top: 10%;
+  top: 15%;
   right: 5%;
   width: 15%;
   height: 25%;
   border-radius: 100%;
+  z-index: -1;
 }
 
 .yellow-rect-bottom {
@@ -240,6 +241,7 @@ header {
   }
 
   .yellow-rect-top {
+    top: 10%;
     width: 10%;
     height: 35%;
   }

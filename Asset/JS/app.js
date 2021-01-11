@@ -45,7 +45,7 @@ function getBufferValues() {
 }
 
 function getAmount(m, v) {
-  const saltMass = ((m * v) / 1000).toFixed(2);
+  const saltMass = ((m * v) / 1000).toFixed(4);
   soluteMass.value = saltMass; 
   document.querySelector('.volume').innerHTML = volume.value + 'ml';
   document.querySelector('.mass').innerHTML = saltMass + 'grams'
